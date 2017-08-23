@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>解决行内元素，行内块元素默认空白间隙</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			/*font-size:0;*/    //清除水平和垂直方向的空白间隙
+		}
+		.box1{
+			width:100%;
+			height:40px;
+			background:#00f;
+		}
+		img{
+			float:left;
+			/*vertical-align:bottom;*/    //清除垂直方向空白间隙
+		}
+		p{
+			font-size:14px;
+		}
+		span{
+			display:inline-block;
+			width:200px;
+			height:40px;
+			background:#f0f;
+			/*vertical-align:bottom;*/
+		}
+	</style>
+</head>
+<body>
+	<img src="images/bag.png" alt="">
+	<img src="images/bag.png" alt="">
+	<img src="images/bag.png" alt="">
+	<div class="box1"></div>
+	<!-- <span></span>
+	<span></span>
+	<span></span>
+	<div class="box1"></div> -->
+	<img src="base_line.jpg">
+	//单独清除水平方向空白间隙，也可以删除掉标签之间的空格来实现。
+	//或者通过给元素添加浮动，设置display:block也可以解决，这些方法卡具体情况而定。
+</body>
+</html>

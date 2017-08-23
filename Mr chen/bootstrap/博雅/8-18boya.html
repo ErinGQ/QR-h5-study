@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>博雅</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+	<style>
+	#nav{
+		background: #191d3a;
+	}
+		.logo{
+			width: 150px;
+			/*height: 50px;*/
+			/*border:1px solid red;*/
+			background:url(images/logo.png) no-repeat;
+			background-size:cover;
+			/*border-radius: 50%; 圆角*/
+
+		}
+		#navbar ul li a{
+			color: #fff;
+		}
+		#navbar ul li a:hover{
+			background: gold;
+			color: #000;
+		}
+		button{
+			margin-top:10px;
+			margin-left: 10px;
+		}
+		#navbar .droplist{
+			background: #191d3a;
+		}
+	</style>
+</head>
+<body>
+<!-- 固定导航栏 navbar-fixed-top-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<!-- 中间瀑布流分开 -->
+	<div class="col-sm-1"></div>
+	<div class="col-sm-10">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<!-- 命名一个类logo -->
+				<a href="#" class="navbar-brand logo">
+					
+				</a>
+				<!-- 汉堡按钮 -->
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<!-- 加类 -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">博雅体育</a></li>
+					<li><a href="#">博雅游戏</a></li>
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">博雅娱乐
+						<!-- 小三角 -->
+						<span class="caret"></span>
+					</a>
+					<!-- 加样式 -->
+					<ul class="dropdown-menu droplist">
+						<li><a href="#">炸金花</a></li>
+						<li><a href="#">斗地主</a></li>
+						<li><a href="#">升级</a></li>
+					</ul>
+
+					</li>
+					<li><a href="#">博雅电影</a></li>
+					<li><a href="#">博雅商城</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li>
+						<button class="btn btn-info">登录</button>
+					</li>
+					<li>
+						<button class="btn btn-info">注册</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-1"></div>
+	</nav>
+	<!-- <div class="navbar navbar-inverse" role="navigation">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-8">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="navbar-brand">博雅商城</a>
+					
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">首页</a></li>
+						<li><a href="">博雅游戏</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="">博雅娱乐<span class="caret"></span></a>
+						
+							<ul class="dropdown-menu">
+								<li><a href="">菜单项目一</a></li>
+								<li><a href="">菜单项目二</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="搜索商品">
+							</div>
+							<button type="submit" class="btn btn-default">点击搜索</button> 
+							</form>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="">登陆</a></li>
+									<li><a href="">注册</a></li>
+								</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+
+				
+			
+			
+		</div>
+		
+	</div> -->
+
+		<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>	
+		<img src="images/banner1.png" alt="">
+</body>
+</html>

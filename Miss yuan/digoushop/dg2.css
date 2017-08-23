@@ -1,0 +1,93 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.container{
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+
+}
+/*.container .p{
+	line-height: 50px;
+	font-size:18px;
+	color:#c60000;
+}*/
+/*.main{
+	float:left;
+	width: 600px;
+	height:800px;
+	margin: 0 auto;
+	border: 2px dashed #c40001;
+}*/
+/*.main span{
+	display: block;
+	font-size: 16px;
+	line-height: 62px;
+	text-align: center;
+	margin: 0 auto;
+	color:#000;
+	width: 550px;
+	border-bottom: 1px solid #c40001;	
+}
+.main ul{
+
+}
+.main .ul li{
+	float: left;
+	width: 188px;
+	height: 216px;
+	background: url("images/woman.png") no-repeat;
+	background-size: 100%;
+	border: 1px solid pink;
+}
+.mid ul li{
+	float: left;
+	width: 188px;
+	height: 216px;
+	background: url("images/makeup.png") no-repeat;
+	background-size: 100%;
+	border: 1px solid pink;
+}*/
+/*小圆点就是用之前那个伪元素的思想，先设置边框，设置border-radius: 50%，就是一个圆*/
+.container .main{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.dot span{
+	width: 1000px;
+	height:50px;
+	border-bottom:2px solid #dbe1e7; 
+}
+.container .dot .left{
+    margin:  7px 0 0 20px;
+}
+.container .dot .right{
+    margin:  7px 20px 0 0;
+}
+.container .dot ul {
+	margin:42px 0 0 480px;
+    float: left;
+}
+.container .dot ul li{
+    float: left;
+    padding: 0;
+    text-align: center;
+}
+.container  .dot ul .first i,.container .dot ul li:hover i{
+    border-color: #2fbc71;
+}
+.container .dot ul li i{
+    margin: 0 7px;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid #b5c0cb;
+    border-radius: 50%;
+}
